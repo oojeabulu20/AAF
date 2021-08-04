@@ -149,5 +149,9 @@ Create a function that takes a Roman numeral as its argument and returns its val
 
 Note that Roman numerals embed subtractions to create values such as 90 using the pair XC. Finding and correctly handling these subtractions can be awkward. You may start by assuming that there are no subtractions embedded within your Roman numeral.
 
-## References
+## References and useful links
+
+- Mozilla Developers Network - JavaScript tutorial - <https://developer.mozilla.org/en-US/docs/Web/javascript>
+- Digital Ocean - How to code in JavaScript tutorial series - <https://www.digitalocean.com/community/tutorial_series/how-to-code-in-javascript> 
+- codesource.io - Object-Oriented Programming in JavaScript - <https://codesource.io/object-oriented-programming-in-javascript/>
 
