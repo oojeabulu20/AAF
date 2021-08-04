@@ -20,3 +20,18 @@ A private repository for saving all codes for AAF module.
 - Week 14. Behaviour-driven development
 - Week 15. User authentication
 - Week 16. Socket.io (Chat)
+
+## Generating PDFs
+
+The pdf file for each exercise can be created using [pandoc](https://pandoc.org/).
+
+Assuming pandoc is installed in your system, the following command will generate a pdf file.
+
+```bash
+pandoc exercises02.md -f markdown -s -o exercises02.pdf
+```
+
+Where:
+
+- `exercises02.md` is the name of the source file.
+- replace the target file extension with docx to generate a word document.

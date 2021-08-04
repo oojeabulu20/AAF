@@ -1,4 +1,6 @@
-# Using JavaScript
+# Week 02 - Using JavaScript
+
+This material can be found in this [link](https://github.com/kaduardo/shu-aaf/week02-Intro_JS_OO/exercises02.md).
 
 ## Introduction
 
