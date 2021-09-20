@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reading input and showing a result</title>
+</head>
+<body>
+
+<h1>Reading input and showing a result</h1>
+
+<div>
+    <input type="text" id="inp" />
+    <input type="button" value="Run..." onClick="io()" />
+</div>
+<p id="demo"></p>
+
+<script>
+    let values = [10, 7, 3, 9, 1, 7, 4] ;
+    let vlen = values.length ;
+
+    function bubblesort() {
+        for ( i=0; i<vlen; i++ ) {
+            for ( j=0; j < (vlen-i) - 1; j++) {
+                if ( values[j] > values[j+1] ) {
+                    let temp = values[j] ;
+                    values[j] = values[j+1] ;
+                    values[j+1] = temp ;
+                }
+            }
+        }
+
+    } // bubblesort
+
+    let yourcode = function() {
+        bubblesort()
+        let result = values ;
+        return result ;
+    } // yourcode
+
+    let io = function() {
+        let v = document.getElementById("inp").value ;
+        document.getElementById("demo").innerHTML = yourcode() ;
+    } // io
+</script>
+
+</body>
+</html> 
