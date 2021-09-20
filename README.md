@@ -5,7 +5,7 @@ A private repository for saving all codes for AAF module.
 ## Table of contents
 
 - Week 1. Introduction to Module/Azure labs
-- [Week 2. Introduction to JavaScript and Object Oriented Java Script](./week02-Intro_JS_OO/exercises02.md)
+- [Week 2. Introduction to JavaScript and Object Oriented Java Script](./week02-Intro-JS-OO/exercises02.md)
 - Week 3. Functional Programming JavaScript
 - Week 4. MongoDB
 - Week 5. Node.js
