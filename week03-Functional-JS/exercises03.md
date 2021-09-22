@@ -1,8 +1,10 @@
 # Week 03 - Functional JavaScript
 
-This material can be found in this [link](https://codeberg.org/kaduardo/shu-aaf/src/branch/main/).
+This material can be found in this [link](https://codeberg.org/kaduardo/shu-aaf/src/branch/main/week03-Functional-JS/exercises03.md).
 
 ## Introduction
+
+This week we'll be playing around with exploring functional programming in the JavaScript language.
 
 ## Exercises
 
@@ -58,6 +60,7 @@ Write a program that is able to take arbitrary length lists of numbers and retur
 
 The world is full of programming challenges and many of them can be done using a functional approach. 
 
-If you don’t mind registering for an account then have a look at <https://www.hackerrank.com/domains/fp> 
-
-If you want a classic set of problems and don’t want to register an account then take a look at <https://projecteuler.net>
+- Playing with functional programming with JS - <https://www.codingame.com/playgrounds/2980/practical-introduction-to-functional-programming-with-js/pure-functions>
+- Another bunch of exercises - <https://gist.github.com/bigsergey/b57c566494d0263da1721425e2846d65>
+- If you don’t mind registering for an account then have a look at <https://www.hackerrank.com/domains/fp> 
+- If you want a classic set of problems and don’t want to register an account then take a look at <https://projecteuler.net>
