@@ -8,14 +8,14 @@ This week you will be solving a variety of programming problems using JavaScript
 
 These exercises will gently introduce you to JavaScript if you don’t know the language and will give you a chance to stretch your skills if you do.
 
-You will probably find the Mozilla Developer Network useful as you develop your solutions: https://developer.mozilla.org/en-US/docs/Web/javascript 
+You will probably find the Mozilla Developer Network useful as you develop your solutions: <https://developer.mozilla.org/en-US/docs/Web/javascript>
 
 You should run your code using the Azure Labs VM. In case you don’t have access to it STOP and talk to your tutor.
 
 **Notes**
 
 - You should try to solve each of the problems using both prototypes and ECMAScript 15 style classes.
-- JavaScript has comprehensive libraries. Don’t use them unles explicitly asked by the exercise.
+- JavaScript has comprehensive libraries. Don’t use them unless explicitly asked by the exercise.
 - Avoid built-in JavaScript functions such as Array’s sort() routine. These exercises are not about finding the “correct” answer. They are to test/improve/stretch your programming abilities.
 
 ## The Exercises
