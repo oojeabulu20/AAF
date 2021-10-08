@@ -1,12 +1,12 @@
-# SHU-AAF-Private repo
+# SHU-AAF Exercises repo
 
-A private repository for saving all codes for AAF module.
+A repository for saving all the exercises for AAF module.
 
 ## Table of contents
 
 - Week 1. Introduction to Module/Azure labs
 - [Week 2. Introduction to JavaScript and Object Oriented Java Script](./week02-Intro-JS-OO/exercises02.md)
-- Week 3. Functional Programming JavaScript
+- [Week 3. Functional Programming JavaScript](./week03-Functional-JS/exercises03.md)
 - Week 4. MongoDB
 - Week 5. Node.js
 - Week 6. Mongoose
