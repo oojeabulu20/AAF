@@ -1,5 +1,7 @@
 # Week 04 - Using MongoDB
 
+This material can be found in this [link](https://codeberg.org/kaduardo/shu-aaf/src/branch/main/week04-MongoDB/exercises04.md).
+
 ## Introduction
 
 This week you have two sets of tasks to complete in this topic. The first is relatively straightforward: copying and then building on the code shown in the lecture slides. In the second task you are asked to implement a more intriguing, and less straightforward database of your own.
@@ -35,7 +37,7 @@ Considering the full path used previously the command line client can be started
 
 - `C:\Users\LabStudent-55-604385\Documents\Workspace\MongoDBServer\bin\mongo.exe` (do not confuse with the `mongod` command used before).
 
-You now have two Command Interpreter consoles running. One with the `mondod.exe` server and the other with the `mongo.exe` command line client that can be used to sendo commands to the MongoDB server.
+You now have two Command Interpreter consoles running. One with the `mongod.exe` server and the other with the `mongo.exe` command line client that can be used to sendo commands to the MongoDB server.
 
 Some usefull commands:
 
