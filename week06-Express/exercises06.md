@@ -212,6 +212,8 @@ tbody
 
 Try to pass the data to the template from the `/pet GET` route handler. You’ll need to remove it from the template itself. Do this by creating an array in the route handler and passing that to the template as the parameter animals.
 
+## 6. Adding a form to your pug page
+
 Using the documentation for Pug at <https://pugjs.org/api/getting-started.html> and <https://medium.com/@nima.2004hkh/create-your-first-login-page-with-exprerssjs-pug-f42250229486> modify your template so that it includes a form you can use to add new pets. Call the fields `name`, `species`, `breed`, `age` and `colour`. You should use the `HTTP POST` verb and the action should be `/petshop/pet`. You should try to make a page that looks something like this
 
 ![An example of form page.](form-example.png)
@@ -277,8 +279,11 @@ Here is one example of the json format to be used.
 {"name":"Scooby Doo", "species":"Dog", "breed":"Great Dane", "age":"51", "colour":"Browinsh with black spots"}
 ```
 
-curl -X POST -H "Content-Type: application/json" \
--d '{"name":"Scooby Doo", "species":"Dog", "breed":"Great Dane", "age":"51", "colour":"Browinsh with black spots"}' http://localhost:3000/petshop/pet
+This is one example using the cURL tool (linux based machines):
+
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"name":"Scooby Doo", "species":"Dog", "breed":"Great Dane", "age":"51", "colour":"Browinsh with black spots"}' http://localhost:3000/petshop/pet
+```
 
 Now that your handler is able to receive POST requests and extract information from the body we can pass this information forward.
 Let's add the newly arrived data to the local array, and have the POST handler reload the page with the new data added to the table at the top each time that it receives a new pet. Do this by using the response object’s redirect method.
@@ -297,7 +302,7 @@ Now try your application in the browser.
 Start by accessing the main list page: <http://localhost:3000/petshop/pet>, then add a few entries using the form.
 Notice in the console the POST request followed by a GET request.
 
-## 6. Creating the database
+## 7. Creating the database
 
 We’re now going to use a mongo database to store information about our pets.
 
@@ -333,7 +338,7 @@ db.animals.insertMany([
 
 Try to display all of the data in the mongo client (e.g., `db.animals.find()`).
 
-## 7. Adding database handling code
+## 8. Adding database handling code
 
 ### Reading data
 
@@ -393,7 +398,7 @@ Save everything and play around with the form. Try adding a few animals to the d
 What kind of output do you have in the node console (the one where you the node server)?
 Add a few `console.log` throuhgout your code to track the sequence in which functions are called.
 
-## 8. Refactorings
+## 9. Refactorings
 
 Here are some additional things that you can do with your code to turn this into a more fully-realised application.
 
