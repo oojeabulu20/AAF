@@ -1,6 +1,6 @@
-# Week 07 - Reading week
+# Week 07 - Designing an API (Reading week)
 
-Designing an API
+This material can be found in this [link](https://codeberg.org/kaduardo/shu-aaf/src/branch/main/week07-API-design/exercises07.md).
 
 ## 1. Introduction
 
