@@ -1,0 +1,54 @@
+//- Example with a simple json object
+- var dog = { name:'Logan', species:'Dog', breed:'Border Collie', age:'2.5', colour:'Black with white, blue and tan head' }
+//- Example with an array of pets
+- var animals = [{ name:'Logan', species:'Dog', breed:'Border Collie', age:'5', colour:'Black with white, blue and tan head' }, {name:'Archie', species:'Dog', breed:'Mongrel', age:'15.5', colour:'White' }]
+html
+  head
+    title!= title
+  body
+    h1 !{message}
+    table(border='1')
+      thead
+         th Name
+         th Species
+         th Breed
+         th Age
+         th Colour or markings
+      tbody
+         td #{dog.name}
+         td #{dog.species}
+         td #{dog.breed}
+         td #{dog.age}
+         td #{dog.colour}
+    h1 Going through the local array of animals
+    table(border='1')
+      thead
+         th Name
+         th Species
+         th Breed
+         th Age
+         th Colour or markings
+      tbody 
+        each pet in animals
+          tr
+            td #{pet.name}
+            td #{pet.species}
+            td #{pet.breed}
+            td #{pet.age}
+            td #{pet.colour}
+    h1 Going through the received array of animalsList
+      table(border='1')
+        thead
+          th Name
+          th Species
+          th Breed
+          th Age
+          th Colour or markings
+        tbody 
+          each pet in animalsList
+            tr
+              td #{pet.name}
+              td #{pet.species}
+              td #{pet.breed}
+              td #{pet.age}
+              td #{pet.colour}
