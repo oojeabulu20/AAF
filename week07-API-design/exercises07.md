@@ -39,3 +39,8 @@ There are several [tools](https://github.com/OAI/OpenAPI-Specification/blob/main
 Now create the API documentation for the petshop application. Start by documenting the endpoints that are already defined in your code and then introduce endpoints for extra functionalities.
 
 *These will be explored in the following weeks*
+
+## 4. Suggestion of material
+
+- Linkedin Learning - Building RESTful APIs with Node.js and Express - <https://www.linkedin.com/learning/building-restful-apis-with-node-js-and-express?u=69719634>
+- Microsoft REST API Guidelines - <https://github.com/microsoft/api-guidelines>
