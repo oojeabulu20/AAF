@@ -33,7 +33,7 @@ The first thing you must do is to make sure node is installed and ready to use i
 Here are some general instructions (remember to adapt those for you particular scenario).
 
 1. Create a folder to save your work. For example, `<some drive>:\aaf`.
-2. Download the latest version of the server from <http://nodejs.org/download/> (only if you are installing in your own machine).
+2. Download the latest version of the server from <http://nodejs.org/> (only if you are installing in your own machine).
 3. Using a plain text editor such as VS Code, Atom, Notepad++ or Sublime Text create a file called `hello.js` in `<some drive>:\aaf`.
 4. Put this code in the file and save it
 
