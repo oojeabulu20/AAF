@@ -36,23 +36,30 @@ Here are some general instructions (remember to adapt those for you particular s
 2. Download the latest version of the server from <http://nodejs.org/download/> (only if you are installing in your own machine).
 3. Using a plain text editor such as VS Code, Atom, Notepad++ or Sublime Text create a file called `hello.js` in `<some drive>:\aaf`.
 4. Put this code in the file and save it
-	```Javascript
+
+	```javascript
 	console.log("Hello World");
 	```
 5. Open a terminal (or Windows Powershell) and go to
  `<some drive>:\aaf`
 6. Run your code with this instruction if you have node in the same directory as your code
+
 	```bash
 	.\node.exe hello.js
 	```
+
 	Or this if node is installed on your system path
+	
 	```bash
 	node .\hello.js
 	```
+	
 	Or this if you are using a mac
+	
 	```bash
 	node ./hello.js
 	```
+	
 	Did it give you the output that you expected?
 
 Note that you can use JavaScript engines to execute this type of code without having node.js
