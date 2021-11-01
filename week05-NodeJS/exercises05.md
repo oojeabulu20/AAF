@@ -10,7 +10,7 @@ Throughout this lab you are going to develop a simple Web application with the f
 - User can see the application in a browser
 - The user sees a welcome page when they navigate to the following URL on your own PC http://localhost:3000/welcome
 - The user is asked to enter name and password into a form
-- The form is submitted to a server application which returns an acknowledgement
+- The form is submitted to a server application which returns an acknowledgment
 
 We need the following components
 
@@ -40,8 +40,8 @@ Here are some general instructions (remember to adapt those for you particular s
 	```javascript
 	console.log("Hello World");
 	```
-5. Open a terminal (or Windows Powershell) and go to
- `<some drive>:\aaf`
+	
+5. Open a terminal (or Windows Powershell) and go to `<some drive>:\aaf` 
 6. Run your code with this instruction if you have node in the same directory as your code
 
 	```bash
