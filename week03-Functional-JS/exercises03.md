@@ -13,7 +13,7 @@ This week we'll be playing around with exploring functional programming in the J
 Here is an array of names:
 
 ```javascript
-let names = ["Ben”, " Jones", "Riyadh”, “Hussein","Sam”, “Robertson-Chamberlain", "Francis”, “Mendoza", "Louise Macdonald","Zachary Akerman", "Kostas Stavropoulos", "Anna Ivanovic", "Tasleem Khan", "Mounika Sharma", "Dianne Ameter"];
+let names = ["Ben", " Jones", "Riyadh", "Hussein","Sam", "Robertson-Chamberlain", "Francis", "Mendoza", "Louise Macdonald","Zachary Akerman", "Kostas Stavropoulos", "Anna Ivanovic", "Tasleem Khan", "Mounika Sharma", "Dianne Ameter"];
 ```
 
 Considering the given array, use the Array types list comprehensions to 
