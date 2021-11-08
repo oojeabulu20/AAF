@@ -5,14 +5,14 @@ A repository for saving all the exercises for AAF module.
 ## Table of contents
 
 - Week 1. Introduction to Module/Azure labs
-- [Week 2. Introduction to JavaScript and Object Oriented Java Script](./week02-Intro-JS-OO/exercises02.md)
-- [Week 3. Functional Programming JavaScript](./week03-Functional-JS/exercises03.md)
-- Week 4. MongoDB
-- Week 5. Node.js
-- Week 6. Mongoose
-- Week 7. Reading week
-- Week 8. Express + API design
-- Week 9. Front-End
+- [Week 2. Introduction to JavaScript and Object Oriented Java Script](./week02-Intro-JS-OO/)
+- [Week 3. Functional Programming JavaScript](./week03-Functional-JS/)
+- [Week 4. MongoDB](./week04-MongoDB/)
+- [Week 5. Node.js](./week05-NodeJS/)
+- [Week 6. Express](./week06/Express)
+- [Week 7. API design](./week07-API-design)
+- Week 8. Front-End
+- Week 9. Mongoose
 - Week 10. Model Associations
 - Week 11. Testing
 - Week 12. Formative assessment
