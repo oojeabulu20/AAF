@@ -1,6 +1,6 @@
 # Week 02 - Using JavaScript
 
-This material can be found in this [link](https://codeberg.org/kaduardo/shu-aaf/src/branch/main/week02-Intro_JS_OO/exercises02.md).
+This material can be found in this [link](https://codeberg.org/kaduardo/shu-aaf/src/branch/main/week02-Intro-JS-OO).
 
 ## Introduction
 

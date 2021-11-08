@@ -1,6 +1,6 @@
 # Week 03 - Functional JavaScript
 
-This material can be found in this [link](https://codeberg.org/kaduardo/shu-aaf/src/branch/main/week03-Functional-JS/exercises03.md).
+This material can be found in this [link](https://codeberg.org/kaduardo/shu-aaf/src/branch/main/week03-Functional-JS/readme.md).
 
 ## Introduction
 
