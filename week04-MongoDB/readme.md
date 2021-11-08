@@ -1,6 +1,6 @@
 # Week 04 - Using MongoDB
 
-This material can be found in this [link](https://codeberg.org/kaduardo/shu-aaf/src/branch/main/week04-MongoDB/exercises04.md).
+This material can be found in this [link](https://codeberg.org/kaduardo/shu-aaf/src/branch/main/week04-MongoDB/readme.md).
 
 ## Introduction
 

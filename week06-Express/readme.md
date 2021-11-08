@@ -1,6 +1,6 @@
 # Week 06 - Express
 
-This material can be found in this [link](https://codeberg.org/kaduardo/shu-aaf/src/branch/main/week06-Express/exercises06.md).
+This material can be found in this [link](https://codeberg.org/kaduardo/shu-aaf/src/branch/main/week06-Express/readme.md).
 
 ## 1. Introduction
 
