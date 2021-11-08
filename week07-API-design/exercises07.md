@@ -131,7 +131,7 @@ Now create the API documentation for the petshop application. Start by documenti
 
 *These will be explored in the following weeks*
 
-## 4. Suggestion of material
+## 5. Suggestion of material
 
 - Linkedin Learning - Building RESTful APIs with Node.js and Express - <https://www.linkedin.com/learning/building-restful-apis-with-node-js-and-express?u=69719634>
 - Microsoft REST API Guidelines - <https://github.com/microsoft/api-guidelines>
