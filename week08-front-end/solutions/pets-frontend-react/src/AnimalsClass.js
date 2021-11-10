@@ -23,7 +23,7 @@ class AnimalsClass extends Component {
    }
 
     componentDidMount() {
-        fetch('/petshop/pet')
+        fetch('/petshop/pets')
         .then(data => data.json())
         .then(res => {
             if (res.error)

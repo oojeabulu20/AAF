@@ -34,7 +34,7 @@ You can test your application by accessing <http://localhost:3050/petshop>.
 
 Now we want to change the project so that it returns JSON documents to calling clients rather than rendering its results as HTML. The only changes that you need to make are in the file that holds the route endpoints (`routes/pets.js`).
 
-Start with the GET `/pet` route. 
+Start with the GET `/pets` route. Notice that we are using `/pets` instead of `/pet`.
 
 - Comment out the lines that return data either directly or by rendering the template.
 - Replace the error condition’s return with
@@ -47,11 +47,11 @@ return res.status(500).send({
 return res.send(data);
 ```
 
-This is one example of the `GET /pet` route after the modifications. Remember this is here just as a reference as you should be working on your own code from the previous weeks.
+This is one example of the `GET /pets` route after the modifications. Remember this is here just as a reference as you should be working on your own code from the previous weeks.
 
 ```javascript
 //GET list of pets from the database
-router.get('/pet', function (req, res, next) {
+router.get('/pets', function (req, res, next) {
   client.connect(function (err) {
     const db = client.db(dbName);
     const collection = db.collection('animals');
@@ -84,7 +84,7 @@ For your reference this is one example of the `POST /pet` route after the change
 
 ```javascript
 // accept POST request and add a new pet to the db
-router.post('/pet', upload.array(), function (req, res) {
+router.post('/pets', upload.array(), function (req, res) {
   let nu = {
     name: req.body.name,
     species: req.body.species,
@@ -312,7 +312,7 @@ Our final stage is to wire the React frontend to the express backend. We’ll do
 
 ```javascript
     componentDidMount() {
-        fetch('/petshop/pet')
+        fetch('/petshop/pets')
         .then(data => data.json())
         .then(res => {
             if (res.error)
@@ -394,7 +394,7 @@ cd pets-frontend-vue
 npm run serve
 ```
 
-Open your browser at http://localhost:8080/. You should see something that looks like the image below.
+Open your browser at <http://localhost:8080/>. You should see something that looks like the image below.
 
 ![First screen after loading your Vue application.](vue-first-screen.png)
 
@@ -472,7 +472,7 @@ Vue.use(VueFlashMessage, {
 });
 
 const vm = new Vue();
-const baseURL = 'http://localhost:3050/petshop/pet/';
+const baseURL = 'http://localhost:3050/petshop/pets/';
 
 const handleError = fn => (...params) =>
     fn(...params).catch(error => {
@@ -603,7 +603,7 @@ Then configure your application to use cors by including the following line:
 app.use(cors());
 ```
 
-Once this is done, start both applications (in separate terminals). Use `npm start` to start your express back end, and `npm run serve` to start your vue front end. Don't forget your mongodb database.
+Once this is done, start both applications (in separate terminals). Use `npm start` to start your express back end, and `npm run serve` to start your Vue front end. Don't forget your mongodb database.
 
 Now open your browser to <http://localhost:3050/petshop/pets> and you should see something similar to the screen below.
 

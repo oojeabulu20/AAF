@@ -16,7 +16,7 @@ router.get('/', function(req, res, next) {
 });
  
 // GET list of pets to show that we're up and running
-router.get('/pet', function(req, res, next) {
+router.get('/pets', function(req, res, next) {
     //Getting list of animals from database
     client.connect(function(err) { 
         const db = client.db(dbName);
@@ -33,7 +33,7 @@ router.get('/pet', function(req, res, next) {
 });
  
 // accept POST request and add a new pet to the db
-router.post('/pet', upload.array(), function (req, res) {
+router.post('/pets', upload.array(), function (req, res) {
      //Extracting data and saving in the database.
     let nu = { name: req.body.name, 
                species: req.body.species, 
@@ -57,13 +57,13 @@ router.post('/pet', upload.array(), function (req, res) {
 });
  
 // accept PUT request at /pet
-router.put('/pet', function (req, res) {
+router.put('/pets', function (req, res) {
  res.send('Got a PUT request at /pet');
 });
  
  
 // accept DELETE request at /pet
-router.delete('/pet', function (req, res) {
+router.delete('/pets', function (req, res) {
  res.send('Got a DELETE request at /pet');
 });
  
