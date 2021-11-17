@@ -78,7 +78,7 @@ module.exports = mongoose => {
 };
 ```
 
-## 4. Creating controllers
+## 4. Creating request handlers (controllers)
 
 Before we were combining the controller code within the routes. We are now going to separate these following best practices for code organisation.
 
@@ -119,7 +119,7 @@ exports.deleteAll = (req, res) => {
 };
 ```
 
-Notice how these functions abstract away from the actual REST method used in the request. This is handled by the router. Let’s now implement some of those functions.
+Notice how these functions abstract away from the actual HTTP method used in the request. This is handled by the router. Let’s now implement some of those functions.
 
 This is the code to create and save a new Animal in the database:
 
@@ -322,7 +322,8 @@ Try the following URLs and make a note of what happens:
 - <http://localhost:3050/>
 - <http://localhost:3050/petshop/pets/2>
 
-You can now use your previous developed front-end application to connect to your back-end.
+You can use a tool like Postman, SoapUI or cURL to send different HTTP requests (e.g., POST, PUT, DELETE) to your back-end.
+You can use your previous developed front-end application to connect to your back-end.
 
 For your reference, the figure below shows the general organisation for your code. Considering that the main folder of your project is named petshop-backed it is possible to notice different folders for the main components of your application.
 
@@ -330,12 +331,10 @@ For your reference, the figure below shows the general organisation for your cod
 
 ## Exercises
 
-1. Modify your front-end application form to submit new animals to the back-end. 
-2. Create the rest of the controller functions. You can use this tutorial as basis for defining your database manipulation functions <https://bezkoder.com/node-express-mongodb-crud-rest-api/>
-3. Update your front-end to fully implement all CRUD functions.
-4. [extra] Based on the discussions over API design, evaluate the current API of the petshop application. Make the necessary changes to fix the API in order to follow best practices and add any additional functionality you feel is necessary.
+1. Create the rest of the controller functions. You can use this tutorial as basis for defining your database manipulation functions <https://bezkoder.com/node-express-mongodb-crud-rest-api/>
+2. Update your front-end to fully implement all CRUD functions.
+3. [extra] Based on the discussions over API design, evaluate the current API of the petshop application. Make the necessary changes to fix the API in order to follow best practices and add any additional functionality you feel is necessary.
 
 ## References
-Mozilla Developer Network - Express web framework (Node.js/JavaScript) - https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs
 
-
+- Mozilla Developer Network - Express web framework (Node.js/JavaScript) - https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs
