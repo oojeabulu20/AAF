@@ -73,6 +73,18 @@ exports.findAll = (req, res) => {
 
 // Find a single Animal with an id
 exports.findOne = (req, res) => {
+    const id = req.params.id;
+
+    Animal.findById(id)
+        .then(data => {
+            if (!data)
+                res.status(404).send({ message: "Not found Animal with id: " + id});
+            else 
+                res.send(data);
+        })
+        .catch(err => {
+            res.status(500).send({message: "Error retriving Animal with id: " + id});
+        })
  
 };
  
