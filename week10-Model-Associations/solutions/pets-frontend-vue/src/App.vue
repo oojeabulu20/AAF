@@ -1,6 +1,12 @@
 <template>
   <div id="app">
     <div>
+      <router-link to="/users/new" exact>
+        New user
+      </router-link>
+      <router-link to="/users" exact >
+        List Users
+      </router-link>
       <router-link to="/pets/new" exact>
         New pet
       </router-link>
