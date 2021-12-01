@@ -15,11 +15,6 @@ A repository for saving all the exercises for AAF module.
 - [Week 9. Mongoose](./week09-Mongoose)
 - [Week 10. Model Associations](./week10-Model-Associations)
 - Week 11. Testing
-- Week 12. Formative assessment
-- Week 13. Revising Full-stack applications
-- Week 14. Behaviour-driven development
-- Week 15. User authentication
-- Week 16. Socket.io (Chat)
 
 ## Generating PDFs
 
