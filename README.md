@@ -11,15 +11,10 @@ A repository for saving all the exercises for AAF module.
 - [Week 5. Node.js](./week05-NodeJS/)
 - [Week 6. Express](./week06/Express)
 - [Week 7. API design](./week07-API-design)
-- Week 8. Front-End
-- Week 9. Mongoose
-- Week 10. Model Associations
+- [Week 8. Front-End](./week08-front-end)
+- [Week 9. Mongoose](./week09-Mongoose)
+- [Week 10. Model Associations](./week10-Model-Associations)
 - Week 11. Testing
-- Week 12. Formative assessment
-- Week 13. Revising Full-stack applications
-- Week 14. Behaviour-driven development
-- Week 15. User authentication
-- Week 16. Socket.io (Chat)
 
 ## Generating PDFs
 
