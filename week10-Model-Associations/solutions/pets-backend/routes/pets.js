@@ -12,7 +12,7 @@ const client = new MongoClient(url);
 
 // GET at the root just to demonstrate
 router.get('/', function(req, res, next) {
-   res.send('got a GET request at /');
+   res.send({message: 'Welcome to the petshop api.');
 });
  
 // GET list of pets to show that we're up and running
