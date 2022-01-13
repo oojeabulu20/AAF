@@ -1,11 +1,5 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-//Pet components
-import PetNew from './views/Pet-New.vue'
-import PetList from './views/Pet-List.vue';
-//User components
-import UserNew from './views/User-New.vue';
-import UserList from './views/User-List.vue';
 
 Vue.use(Router);
  
@@ -16,27 +10,34 @@ export default new Router({
     routes: [
         {
             path: '/',
-            redirect: '/pets'
+            alias: "/animals",
+            name: 'animals',
+            component: () => import("./components/AnimalList")
         },
         {
-            path: '/pets',
-            name: 'pets',
-            component: PetList
+            path: '/animals/:id',
+            name: 'animal-details',
+            component: () => import("./components/Animal")
         },
         {
-            path: '/pets/new',
-            name: 'new-pet',
-            component: PetNew
+            path: '/add-animal',
+            name: 'add-animal',
+            component: () => import("./components/AnimalAdd")
         },
         {
             path: '/users',
             name: 'users',
-            component: UserList
+            component: () => import("./components/UserList")
         },
         {
-            path: '/users/new',
-            name: 'new-user',
-            component: UserNew
+            path: '/users/:id',
+            name: 'user-details',
+            component: () => import("./components/User")
+        },
+        {
+            path: '/add-user',
+            name: 'add-user',
+            component: () => import("./components/UserAdd")
         }
     ]
 });

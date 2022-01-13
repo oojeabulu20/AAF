@@ -1,23 +1,26 @@
 <template>
   <div id="app">
-    <div>
-      <router-link to="/users/new" exact>
-        New user
-      </router-link>
-      <router-link to="/users" exact >
-        List Users
-      </router-link>
-      <router-link to="/pets/new" exact>
-        New pet
-      </router-link>
-      <router-link to="/pets" exact >
-        List Pets
-      </router-link>
-    </div>
-    <div>
-      <div class="column">
-        <router-view />
-      </div> 
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <router-link to="/" class="navbar-brand">Petshop</router-link>
+      <div class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <router-link to="/animals" class="nav-link">Animals</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/add-animal" class="nav-link">Add Animal</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/users" class="nav-link">List Users</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/add-users" class="nav-link">Add Users</router-link>
+        </li>
+      </div>
+
+    </nav>
+
+    <div class="container mt-3">
+      <router-view />
     </div>
   </div>
 </template>
