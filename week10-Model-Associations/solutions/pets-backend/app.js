@@ -46,7 +46,7 @@ db.mongoose.connect(db.url, {
 
 // Configuring the main routes
 app.use('/petshop', animalRouter);
-app.use('/users', userRouter);
+app.use('/petshop', userRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,7 +1,5 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import NewPet from './views/NewPet.vue'
-import ListPets from './views/ListPets.vue';
 
 Vue.use(Router);
  
@@ -12,17 +10,19 @@ export default new Router({
     routes: [
         {
             path: '/',
-            redirect: '/pets'
+            alias: "/animals",
+            name: 'animals',
+            component: () => import("./components/AnimalList")
         },
         {
-            path: '/pets',
-            name: 'pets',
-            component: ListPets
+            path: '/animals/:id',
+            name: 'animal-details',
+            component: () => import("./components/Animal")
         },
         {
-            path: '/pets/new',
-            name: 'new-pet',
-            component: NewPet
+            path: '/add-animal',
+            name: 'add-animal',
+            component: () => import("./components/AnimalAdd")
         }
     ]
 });

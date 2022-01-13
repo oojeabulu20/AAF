@@ -33,7 +33,7 @@ export default {
     },
     async mounted() {
         this.pets = await api.getpets();
-        console.log("Fetch " + JSON.stringify(this.pets.data) );
+        console.log("Fetch " + JSON.stringify(this.pets) );
     }
 };
 </script>

@@ -90,15 +90,66 @@ exports.findOne = (req, res) => {
  
 // Update a Animal by the id in the request
 exports.update = (req, res) => {
- 
+    if (!req.body) {
+        return res.status(400).send({
+            message: "Data to update can not be empty!"
+        });
+    }
+
+    const id = req.params.id;
+
+    Animal.findByIdAndUpdate(id, req.body, { useFindAndModify: false })
+        .then(data => {
+            if (!data) {
+                res.status(404).send({
+                    message: `Cannot update Animal with id=${id}. Maybe Animal was not found!`
+                });
+            } else 
+                res.send({ message: "Animal was updated successfully." });
+        })
+        .catch(err => {
+            res.status(500).send({
+                message: "Error updating Animal with id=" + id
+            });
+        });
 };
  
 // Delete a Animal with the specified id in the request
 exports.delete = (req, res) => {
- 
+    const id = req.params.id;
+
+    Animal.findByIdAndRemove(id)
+        .then(data => {
+            if (!data) {
+                res.status(404).send({
+                    message: `Cannot delete Animal with id=${id}. Maybe Animal was not found!`
+                });
+            } else {
+                res.send({
+                    message: "Animal was deleted successfully!"
+                });
+            }
+        })
+        .catch(err => {
+            res.status(500).send({
+                message: "Could not delete Animal with id=" + id
+            });
+        });
+
 };
  
 // Delete all Animal from the database.
 exports.deleteAll = (req, res) => {
- 
+    Animal.deleteMany({})
+        .then(data => {
+            res.send({
+                message: `${data.deletedCount} Animals were deleted successfully!`
+            });
+        })
+        .catch(err => {
+            res.status(500).send({
+                message:
+                err.message || "Some error occurred while removing all animals."
+            });
+        });
 };
