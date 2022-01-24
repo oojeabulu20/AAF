@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "384a5050-050b-4e80-a470-52be79beede9",
+		"name": "AAF-Authentication-testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Signup User #01",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"user01\",\n  \"password\": \"pass01\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3050/petshop/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"petshop",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signup User #02",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"user02\",\n  \"password\": \"pass02\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3050/petshop/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"petshop",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Access public resource",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3050/petshop/test/public",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"petshop",
+						"test",
+						"public"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Access protected resource (negative result)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3050/petshop/test/protected",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"petshop",
+						"test",
+						"protected"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signin User01 (wrong password)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"user01\",\n  \"password\": \"wrongpass01\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3050/petshop/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"petshop",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signin User01 (right password)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"user01\",\n  \"password\": \"pass01\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3050/petshop/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"petshop",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Access protected resource (positive result)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZWU4NGRlMTBmZjUyZGZlZWQwMzZkYiIsImlhdCI6MTY0MzAyMjQ0MywiZXhwIjoxNjQzMTA4ODQzfQ.rSBU2hs2eff5N9KMU0h1EKqmtAF0IJQHI62QTdW82pM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3050/petshop/test/protected",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"petshop",
+						"test",
+						"protected"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Access protected resource (wrong token)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZWU4NGRlMTBmZjUyZGZlZWQwMzZkYiIsImlhTdW82pM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3050/petshop/test/protected",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3050",
+					"path": [
+						"petshop",
+						"test",
+						"protected"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
